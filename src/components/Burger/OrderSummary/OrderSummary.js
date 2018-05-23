@@ -18,6 +18,7 @@ const orderSummary = (props) => {
             <p>Continue to checkout?</p>
             <Button btnType="Danger" clicked={props.purchaseCancelled}>CANCEL</Button>
             <Button btnType="Success" clicked={props.purchaseContinued}>CONTINUE</Button>
+
         </div>
     );
 };

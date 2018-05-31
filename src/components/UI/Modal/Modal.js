@@ -7,7 +7,7 @@ class Modal extends Component {
     //Don't update the state or props if the conditional statement is false to
     //ensure not to render
     shouldComponentUpdate(nextProps, nextState) {
-        return nextProps.show !== this.props.show;
+        return nextProps.show !== this.props.show || nextProps.children !== this.props.children;
     }
 
     // componentWillUpdate() {
